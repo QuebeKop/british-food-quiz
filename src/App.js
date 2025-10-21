@@ -12,18 +12,21 @@ export default function BritishFoodQuiz() {
     mushy_greenish_savoury: { name: 'Mushy Peas', emoji: '💚', description: 'The vegetable that gave up on being vegetables' },
     mushy_yellowish_sweet: { name: 'Custard', emoji: '🍮', description: 'Technically a sauce, emotionally a mystery' },
     mushy_reddish_sweet: { name: 'Stewed Rhubarb', emoji: '🥄', description: 'Sweet and aggressively mushy' },
+    mushy_greenish_savoury: { name: 'Laverbread', emoji: '🌊', description: 'Welsh seaweed purée. Yes, seaweed. For breakfast.' },
     hard_brownish_savoury: { name: 'Digestive Biscuit', emoji: '🍪', description: 'Harder than your average will to live' },
     hard_blackish_bitter: { name: 'Pontefract Cake', emoji: '⚫', description: 'A liquorice disc that tastes like punishment' },
     hard_greenish_savoury: { name: 'Boiled Sweet', emoji: '🔵', description: 'Vintage British candy that refuses to dissolve' },
     crunchy_brownish_savoury: { name: 'Pork Scratching', emoji: '🐷', description: 'Exactly what it sounds like, unfortunately' },
     crunchy_yellowish_savoury: { name: 'Prawn Cocktail Crisp', emoji: '🦐', description: 'The seasoning is more powerful than the potato' },
     crunchy_reddish_savoury: { name: 'Ready Salted Crisp', emoji: '🥔', description: 'The gateway to regret' },
+    crunchy_brownish_savoury: { name: 'Scotch Egg', emoji: '🥚', description: 'A hard-boiled egg in a meat jacket. Peak pub snack energy.' },
     spongy_orangish_sweet: { name: 'Treacle Sponge Pudding', emoji: '🎂', description: 'Dense, dark, and oddly compelling' },
     spongy_yellowish_sweet: { name: 'Victoria Sponge', emoji: '🍰', description: 'The only respectable entry on this list' },
     spongy_blackish_sweet: { name: 'Chocolate Cake', emoji: '🍫', description: 'Actually delicious, sorry to break the pattern' },
     spongy_reddish_sweet: { name: 'Spotted Dick', emoji: '🍮', description: 'Yes, that is its actual name. Steamed suet pudding with currants.' },
+    spongy_brownish_savoury: { name: 'Toad in the Hole', emoji: '🌭', description: 'Sausages trapped in Yorkshire pudding batter. No toads involved.' },
+    spongy_yellowish_sweet: { name: 'Jam Roly-Poly', emoji: '🍰', description: 'Suet pastry rolled with jam. Stodgy in the best way.' },
     runny_brownish_savoury: { name: 'Gravy', emoji: '🫕', description: 'Technically a condiment, philosophically a lifestyle' },
-    goopy_yellowish_sweet: { name: 'Custard', emoji: '🍮', description: 'Warm, disturbing, somehow mandatory' },
     runny_greenish_savoury: { name: 'Mint Sauce', emoji: '💚', description: 'Aggressively green and watery' },
     limp_brownish_savoury: { name: 'Chip Shop Chips', emoji: '🍟', description: 'Soggy in places, crispy in others, disappointing throughout' },
     limp_greenish_bland: { name: 'Boiled Cabbage', emoji: '🥬', description: 'Colour of despair, texture of surrender' },
@@ -31,14 +34,23 @@ export default function BritishFoodQuiz() {
     sticky_brownish_sweet: { name: 'Toffee', emoji: '🍬', description: 'Sticks to your teeth and your regrets' },
     sticky_brownish_savoury: { name: 'Date and Walnut Loaf', emoji: '🍞', description: 'Suspiciously moist and weirdly good' },
     sticky_blackish_eyewatering: { name: 'Marmite', emoji: '🖤', description: 'A substance so divisive it defies physics. A tiny scraping causes existential crisis.' },
+    sticky_blackish_savoury: { name: 'Black Pudding', emoji: '⚫', description: 'Blood sausage. Yes, actual blood. Breakfast staple.' },
     sticky_yellowish_sweet: { name: 'Sticky Toffee Pudding', emoji: '🍮', description: 'The one sticky thing people actually enjoy' },
     goopy_yellowish_savoury: { name: 'Salad Cream', emoji: '🥗', description: 'Not quite mayo, not quite anything else. Utterly British confusion.' },
+    goopy_yellowish_sweet: { name: 'Custard', emoji: '🍮', description: 'Warm, disturbing, somehow mandatory' },
     goopy_orangish_sweet: { name: 'Marmalade', emoji: '🍊', description: 'Aggressively bitter orange paste that British people call breakfast' },
     goopy_brownish_savoury: { name: 'HP Sauce', emoji: '🔶', description: 'Gloopy brown perfection on a plate' },
+    goopy_greyish_savoury: { name: 'Jellied Eels', emoji: '🐍', description: 'Eels. In jelly. From the Thames. Horrifying East End delicacy.' },
+    crumbly_pinkish_sweet: { name: 'Bakewell Tart', emoji: '🥧', description: 'Almond and jam perfection with questionable pink icing' },
+    crumbly_yellowish_sweet: { name: 'Rhubarb Crumble', emoji: '🥄', description: 'Tart fruit buried under sweet rubble' },
+    lumpy_greyish_savoury: { name: 'Haggis', emoji: '🏴󐁧󐁢󐁳󐁣󐁴󐁿', description: "Scotland's revenge on the digestive system. Sheep innards in a stomach." },
+    lumpy_greyish_bland: { name: 'Pease Pudding', emoji: '🫘', description: 'Split peas boiled into submission. Texture of regret.' },
+    lumpy_pinkish_sweet: { name: 'Eton Mess', emoji: '🍓', description: 'Broken meringue, cream, and strawberries. Posh chaos.' },
+    lumpy_yellowish_sweet: { name: 'Clotted Cream', emoji: '🥛', description: 'Cream so thick it forgot how to pour. Cornish gold.' },
   };
 
-  const textures = ['mushy', 'hard', 'crunchy', 'spongy', 'runny', 'limp', 'sticky', 'goopy'];
-  const colors = ['brownish', 'blackish', 'greenish', 'yellowish', 'reddish', 'orangish'];
+  const textures = ['mushy', 'hard', 'crunchy', 'spongy', 'runny', 'limp', 'sticky', 'goopy', 'crumbly', 'lumpy'];
+  const colors = ['brownish', 'blackish', 'greenish', 'yellowish', 'reddish', 'orangish', 'greyish', 'pinkish'];
   const tastes = ['sweet', 'savoury', 'salty', 'bitter', 'bland', 'eye-watering'];
 
   const handleTextureSelect = (t) => {
@@ -137,7 +149,7 @@ export default function BritishFoodQuiz() {
                     onClick={() => handleTasteSelect(t)}
                     className="p-4 bg-gradient-to-br from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700 text-white rounded-lg font-semibold text-lg transition transform hover:scale-105"
                   >
-                    {t.charAt(0).toUpperCase() + t.slice(1)}
+                    {t.charAt(0).toUpperCase() + t.slice(t === 'eye-watering' ? 0 : 1)}
                   </button>
                 ))}
               </div>
